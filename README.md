@@ -18,13 +18,13 @@
 Endpoints
 
   1. Проверка на статуса:
-       GET /health
+       curl http://localhost:5000/health
 
   2. Създаване на потребител:
        curl -X POST -H "Content-Type: application/json" -d '{"name": "Ivan Ivanov", "email": "ivanov@example.com"}' http://localhost:5000/users
 
   3. Списък с всички потребители:
-       GET /users
+       curl http://localhost:5000/users
 
 Спиране на приложението
 
