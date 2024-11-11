@@ -21,12 +21,7 @@ Endpoints
        GET /health
 
   2. Създаване на потребител:
-       POST /users
-       Content-Type: application/json
-       {
-           "name": "Ivan Ivanov"
-           "email": "ivan@example.com"
-       }
+       curl -X POST -H "Content-Type: application/json" -d '{"name": "Ivan Ivanov", "email": "ivanov@example.com"}' http://localhost:5000/users
 
   3. Списък с всички потребители:
        GET /users
